@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <div class="title-section">
+      <h1>Compound Interest Calculator!</h1>
+    </div>
+
+    <div class="middle-section">
+      <form>
+        <img src="https://media.tenor.com/qy51r4zbQBUAAAAe/money-bags.png" />
+        <div class="money">Amount of Money: <input type="number" /></div>
+        <div class="interestRate">Interest Rate: <input type="number" /></div>
+        <label for="recurrance">Compound Frequency:</label>
+        <select name="recurrance" id="recurrance">
+          <option value="1">Yearly</option>
+          <option value="2">Half-Yearly</option>
+          <option value="4">Quarterly</option>
+          <option value="12">Monthly</option>
+          <option value="52">Weekly</option>
+          <option value="365">Daily</option>
+        </select>
+        <div class="slidercontainter">
+          <label for="year-range">
+            Number of Years: <span id="slider-value"> 0 </span></label
+          >
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="0"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+      </form>
+        <div id="result">
+          <p>Future Value: <span id="future-value">$0.00</span></p>
+          <p>Total Interest: <span id="total-interest">$0.00</span></p>
+        </div>
+    <footer>MADE BY DAM</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
